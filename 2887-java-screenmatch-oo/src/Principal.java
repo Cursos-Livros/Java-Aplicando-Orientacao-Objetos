@@ -24,5 +24,9 @@ public class Principal {
         serie.setNome("House");
         serie.setAnoDeLancamento(2004);
         serie.exibeFichaTecnica();
+        serie.setTemporada(8);
+        serie.setNumeroEpisodiosTemporada(24);
+        serie.setMinutosEpisodio(50);
+        System.out.println("Duracao total da serie: " + serie.getDuracaoEmMinutos());
     }
 }
