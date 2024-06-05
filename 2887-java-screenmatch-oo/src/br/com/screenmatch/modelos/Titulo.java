@@ -1,3 +1,5 @@
+package br.com.screenmatch.modelos;
+
 public class Titulo {
     String nome;
     int anoDeLancamento;
@@ -54,17 +56,17 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    void exibeFichaTecnica(){
+    public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
-    void avalia(double nota){
+    public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double pegaMedia(){
+    public double pegaMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
